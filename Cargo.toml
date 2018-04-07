@@ -1,0 +1,14 @@
+[package]
+name = "rterm"
+version = "0.2.0"
+authors = ["Vladimir Markelov <vladimir.markelov@nexenta.com>"]
+
+[dependencies]
+iota = "0.1.*"
+lazy_static = "0.2.*"
+unicode-width = "0.1.*"
+
+[target.'cfg(windows)'.dependencies]
+winapi = "0.2"
+kernel32-sys = "0.2"
+
